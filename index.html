@@ -1,0 +1,113 @@
+<link href="https://googleapis.com" rel="stylesheet">
+<link rel="stylesheet" href="https://cloudflare.com">
+
+<style>
+    :root {
+        --primary: #5c2c16;
+        --secondary: #d4a373;
+        --dark: #1a1512;
+        --light: #fefae0;
+        --accent: #bc6c25;
+        --white: #ffffff;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Kanit', sans-serif;
+    }
+    body {
+        background-color: #f9f6f0;
+        color: var(--dark);
+        line-height: 1.6;
+        padding-top: 60px;
+    }
+    header {
+        background-color: var(--dark);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        padding: 1rem;
+    }
+    .logo {
+        color: var(--secondary);
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .logo i {
+        color: var(--accent);
+    }
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+    .nav-links a {
+        color: var(--light);
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+    .hero {
+        height: 80vh;
+        background: linear-gradient(rgba(26, 21, 18, 0.7), rgba(26, 21, 18, 0.7)), url('https://unsplash.com') no-repeat center center/cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--white);
+        padding: 0 1.5rem;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+    }
+    .hero p {
+        font-size: 0.95rem;
+        max-width: 600px;
+        margin-bottom: 2rem;
+        color: var(--light);
+    }
+    .btn-cta {
+        background-color: var(--accent);
+        color: var(--white);
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+</style>
+
+<header>
+    <nav>
+        <a href="#" class="logo"><i class="fa-solid fa-dragon"></i> ดินมังกร</a>
+        <ul class="nav-links">
+            <li><a href="#home">หน้าแรก</a></li>
+            <li><a href="#products">สินค้า</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>ดินมังกร</h1>
+    <p>คุณค่าแห่งศาสตร์ดินเผาโอ่งมังกรราชบุรี สู่ของตกแต่งบ้านดีไซน์ร่วมสมัย ที่สะท้อนรสนิยมโมเดิร์นลักชัวรีในแบบคุณ</p>
+    <a href="#products" class="btn-cta">ชมคอลเลกชัน</a>
+</section>
